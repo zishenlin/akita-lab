@@ -1,0 +1,5 @@
+<p>todo works!</p>
+<button (click)="add()">add</button>
+<button (click)="update()">update</button>
+<button (click)="remove()">remove</button>
+<div *ngFor="let item of todo$ | async">{{item.id}} : {{item.name}}</div>
